@@ -1,0 +1,366 @@
+@import url(https://googledrive.com/host/0BxjwQr0BBXs-aDYxM2JlaFM2bnM);
+@import url(https://f3a7a1b1655de4833e3bed3b1779c5a9d85839f8.googledrive.com/host/0BxjwQr0BBXs-aDYxM2JlaFM2bnM);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+*
+{
+   font-family: Open Sans Condensed !important;
+}
+
+#mal_cs_otherlinks:before {
+background: none repeat scroll 0 0 transparent !important;
+color: white !important;
+font-size: 1.5em;
+content: "If that doesn't affect you, then your heart is already broken." !important;
+width: 330px !important;
+position: absolute !important;
+right: 300px !important;
+top: 10px !important;
+}
+
+/*
+	Width of the
+*/
+#list_surround
+{
+	width: 1050px; 
+}
+
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(3),
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(4), 
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(5), 
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(6), 
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(7),
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(8) {
+    display:-cell;
+}  
+
+#list_surround small a:last-of-type
+{
+	background: #FFFFFF;
+	background-size: cover;
+    display: none !important;
+}
+
+#list_surround small a:last-of-type {
+    display: none !important;
+}
+
+.animetitle + small {
+    visibility: visible !important;
+}
+
+
+/*
+	"a" indicates links
+*/
+#list_surround a[href*="http://myanimelist.net/panel.php?go=edit"],
+#list_surround a[href*="http://myanimelist.net/editlist.php?type="], 
+#list_surround a[href*="http://myanimelist.net/panel.php?go=add"] {
+    visibility: visible !important;
+    margin-right: 10px
+}
+
+/*
+	The main background area
+*/
+body
+{
+	background: url(http://i.imgur.com/g5ZWcxY.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/*
+	The headings
+*/
+.header_title
+{
+background-color: rgba(255, 255, 255, 0.95);
+font-size: 2em;
+font-family: Open Sans Condensed;
+	height: 50px;
+	color: black;
+	left: 50px;
+	padding-left: 50px;
+}
+
+/*
+	The heading area for the differents
+*/
+.table_header
+{
+	background-color: rgba(255, 255, 255, 0.80);
+}
+
+/* 
+	For stuff like the numbers and the "airing"
+*/
+.category_totals, .td1, .td2, #grand_totals, #copyright
+{
+background-color: rgba(200, 200, 200, 0.75);
+font-family: Open Sans Condensed;
+	color: black;
+}
+
+.category_totals, #grand_totals
+{
+	
+	text-align: center;
+}
+
+/* 
+	For stuff like the numbers and the "airing", when hovering over them
+*/
+.category_totals:HOVER, .td1:HOVER, .td2:HOVER, #grand_totals:HOVER, #copyright:HOVER
+{
+	color: #000000;
+}
+
+/*
+	The buttons for, e.g., All Anime, Currently Watching, etc.
+*/
+/*
+CATEGORY MENU BUTTONS TRANSITION SPEED
+By default, set to .25th of a second (a 1/4 of a second transition).
+*/
+.status_not_selected a {
+transition: all 0.15s ease-in-out 0s;
+}
+
+
+/*
+CATEGORY MENU BUTTONS (BACKGROUNDS/POSITION)
+You can also change the position of the buttons on the page with the right/top buttons. Change right to left to start them from the left side instead.
+
+Active button images are the ones seen on their own category page or when hovering over them (pointing to it with your mouse), and inactive are the others. So on the completed page you'll see the active button's image on the completed button. On other pages, you'll see the inactive image, until you point to it.
+*/
+
+/*
+CURRENT BUTTON (ACTIVE, INACTIVE)
+*/
+.status_not_selected a[href*="status=1"] {
+background-image: url(http://i.imgur.com/7O0Qwwb.png);
+top: 60px;
+right: -225px;
+border-radius: 11px 0px 0px 0px;
+}
+
+
+/*
+CURRENT BUTTON (HOVER)
+*/
+.status_selected a[href*="status=1"], .status_not_selected a[href*="status=1"]:hover{
+background-image: url(http://i.imgur.com/7O0Qwwb.png);
+right: -20px;
+top: 60px;
+border-radius: 11px 0px 0px 0px;
+}
+
+
+/*
+COMPLETED (ACTIVE, INACTIVE)
+*/
+.status_not_selected a[href*="status=2"] {
+background-image: url(http://i.imgur.com/Vfo0Tsl.png);
+top: 142px;
+right: -225px;
+}
+
+/*
+COMPLETED (HOVER)
+*/
+.status_selected a[href*="status=2"], .status_not_selected a[href*="status=2"]:hover {
+background-image: url(http://i.imgur.com/Vfo0Tsl.png);
+right: -20px;
+top: 142px;
+}
+
+/*
+ON-HOLD (ACTIVE, INACTIVE)
+*/
+.status_not_selected a[href*="status=3"] {
+background-image: url(http://i.imgur.com/kb07QwH.png);
+top: 220px;
+right: -225px;
+}
+
+/*
+ON-HOLD (HOVER)
+*/
+.status_selected a[href*="status=3"], .status_not_selected a[href*="status=3"]:hover {
+background-image: url(http://i.imgur.com/kb07QwH.png);
+right: -20px;
+top: 220px;
+}
+
+/*
+DROPPED (ACTIVE, INACTIVE)
+*/
+.status_not_selected a[href*="status=4"] {
+background-image: url(http://i.imgur.com/AvTgo8f.png);
+top: 300px;
+right: -225px;
+}
+
+/*
+DROPPED (HOVER)
+*/
+.status_selected a[href*="status=4"], .status_not_selected a[href*="status=4"]:hover {
+background-image: url(http://i.imgur.com/AvTgo8f.png);
+right: -20px;
+top: 300px;
+}
+
+/*
+PLANNED (ACTIVE, INACTIVE)
+*/
+.status_not_selected a[href*="status=6"] {
+background-image: url(http://i.imgur.com/XnWR2Iw.png);
+top: 380px;
+right: -225px;
+}
+
+/*
+PLANNED (HOVER)
+*/
+.status_selected a[href*="status=6"], .status_not_selected a[href*="status=6"]:hover {
+background-image: url(http://i.imgur.com/XnWR2Iw.png);
+right: -20px;
+top: 380px;
+}
+
+/*
+ALL ANIME (ACTIVE, INACTIVE)
+*/
+.status_not_selected a[href*="status=7"] {
+background-image: url(http://i.imgur.com/boxl5uq.png);
+top: 460px;
+right: -225px;
+border-radius: 0px 0px 0px 11px;
+}
+
+/*
+ALL ANIME (HOVER)
+*/
+.status_selected a[href*="status=7"], .status_not_selected a[href*="status=7"]:hover {
+background-image: url(http://i.imgur.com/boxl5uq.png);
+right: -20px;
+top: 460px;
+border-radius: 0px 0px 0px 11px;
+}
+
+/*
+BUTTON TEXT
+This section is disabled by default. The fonts you see on buttons by default are in the default custom images, which you change above. If you want the original text back in the buttons, change "transparent !important" below to the color you want. You can also change the font size here or add a custom font family.
+*/
+.status_selected a, .status_not_selected a {
+color: transparent !important;
+text-decoration: none !important;
+text-align: left;
+font-size: 20px;
+font-family: ;
+}
+
+/*
+OTHER CATEGORY BUTTON CODES (HEIGHT/WIDTH/COLOR)
+Control the height and width of all the buttons at once here. Change "fixed" to "absolute" to keep the buttons from scrolling down with the page. Border radius controls the button's roundness.
+*/
+.status_selected a[href*="status=1"],
+.status_selected a[href*="status=2"],
+.status_selected a[href*="status=3"],
+.status_selected a[href*="status=4"],
+.status_selected a[href*="status=6"],
+.status_selected a[href*="status=7"],
+.status_not_selected a[href*="status=1"],
+.status_not_selected a[href*="status=2"],
+.status_not_selected a[href*="status=3"],
+.status_not_selected a[href*="status=4"],
+.status_not_selected a[href*="status=6"],
+.status_not_selected a[href*="status=7"] {
+background-color: transparent;
+background-position: left top;
+background-repeat: repeat repeat;
+display: block;
+height: 80px;
+width: 290px;
+padding-left: 6px !important;
+overflow: auto;
+padding: 0;
+border: black 1px solid;
+position: fixed;
+}
+
+/*
+	The anime titles
+*/
+a {
+-moz-transition: all 0.25s ease-in-out 0s;
+-webkit-transition: all 0.25s ease-in-out 0s;
+-o-transition: all 0.25s ease-in-out 0s;
+transition: all 0.25s ease-in-out 0s;
+color: black;
+font-size: 1.5em;
+text-decoration: none;
+text-shadow: none;
+font-family: Open Sans Condensed;
+}
+
+a:hover {
+color: red;
+}
+
+/*
+    Colours the entire row when hovering over it.
+*/
+tr:hover [class^=td] {
+background-color: rgba(255, 255, 255, 0.9) !important;
+-moz-transition: .4s ease;
+-webkit-transition: .4s ease;
+-o-transition: .4s ease;
+}
+
+/*
+Anime title's box width
+*/
+.td1:nth-of-type(2), .td2:nth-of-type(2){
+width: 500px;
+}
+
+/*
+Anime title table header width
+*/
+
+.table_header:nth-of-type(2) {
+width: 500px;
+}
+
+#copyright
+{
+background-color: rgba(255, 255, 255, .75) !important;
+width: ;
+color: black;
+position:;
+bottom: 0;
+padding-top: 2px;
+padding-bottom: 2px;
+padding-right: 2px;
+padding-left: 2px;
+}
+
+#copyright:hover 
+{
+	background-color: rgba(255, 255, 255, 0.85);
+	color: black;
+}
+
+/*
+	Shows the <content> text before the copyright message
+*/
+#copyright:before {
+color: red;
+Content: " The theory of relativity is so romantic.  And so sad.";
+padding-right: 20px;
+padding-bottom: 20px;
+font-size: 2em;
+}

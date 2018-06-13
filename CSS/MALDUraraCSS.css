@@ -1,0 +1,255 @@
+@import url(https://googledrive.com/host/0BxjwQr0BBXs-aDYxM2JlaFM2bnM);
+@import url(https://f3a7a1b1655de4833e3bed3b1779c5a9d85839f8.googledrive.com/host/0BxjwQr0BBXs-aDYxM2JlaFM2bnM);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+*
+{
+   font-family: Open Sans Condensed !important;
+}
+
+/*
+	Width of the tables
+*/
+#list_surround
+{
+	width: 950px;
+	background-color: rgba(0, 0, 0, 0.95);
+	border-radius: 25px 25px 25px 25px;
+	border-style: solid !important;
+	border-width: 5px;
+	border-color: rgba(74, 74, 74, 1);
+}
+
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(3),
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(4), 
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(5), 
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(6), 
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(7),
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(8) {
+    display:-cell;
+}  
+
+#list_surround small a:last-of-type
+{
+	background: #FFFFFF;
+	background-size: cover;
+    display: none !important;
+}
+
+#list_surround small a:last-of-type {
+    display: none !important;
+}
+
+.animetitle + small {
+    visibility: visible !important;
+}
+
+
+/*
+	"a" indicates links
+*/
+#list_surround a[href*="http://myanimelist.net/panel.php?go=edit"],
+#list_surround a[href*="http://myanimelist.net/editlist.php?type="], 
+#list_surround a[href*="http://myanimelist.net/panel.php?go=add"] {
+    visibility: visible !important;
+    margin-right: 10px
+}
+
+/**********************************************************************/
+/*
+	The main background area
+	CHANGE THE URL TO A LINK TO YOUR CHOSEN BACKGROUND IMAGE.
+*/
+body
+{
+	background: url(http://i.imgur.com/k3bSXMm.png);
+	background-attachment: fixed;
+	background-position: 35% top;
+	background-size: auto !important;
+}
+
+/**********************************************************************/
+/*
+	The headings
+	IF YOU WANT A DIFFERENT TABLE-BACKGROUND COLOUR, CHANGE THE "background-color" BIT.  TAKES RGBA AND HEX COLOURS.
+*/
+.header_title
+{
+background-color: #ff6600;
+font-size: 2em;
+font-family: Open Sans Condensed;
+	height: 50px;
+	color: white;
+	left: 50px;
+	padding-left: 50px;
+	border-radius: 25px 25px 0px 0px !important;
+	border-width: 5px;
+	border-color: white;
+}
+
+/**********************************************************************/
+/*
+	The heading area for the different categories (Completed, Airing etc.)
+	IF YOU WANT A DIFFERENT TABLE-BACKGROUND COLOUR, CHANGE THE "background-color" BIT.  TAKES RGBA AND HEX COLOURS.
+*/
+.table_header
+{
+	background-color: #ff6600;
+}
+
+/**********************************************************************/
+/* 
+	For stuff like the numbers and the "airing"
+*/
+.category_totals, .td1, .td2, #grand_totals, #copyright
+{
+background-color: #ff6600;
+font-family: Open Sans Condensed;
+	color: white;
+}
+
+.category_totals
+{
+	border-radius: 0px 0px 10px 10px;
+	border-color: white;
+	border-width: 5px;
+}
+
+/* 
+	For stuff like the numbers and the "airing", when hovering over them
+*/
+.category_totals:HOVER, .td1:HOVER, .td2:HOVER, #grand_totals:HOVER, #copyright:HOVER
+{
+	color: #000000;
+}
+
+/*
+	The buttons for, e.g., All Anime, Currently Watching, etc.
+*/
+/*
+CATEGORY MENU BUTTONS TRANSITION SPEED
+By default, set to .25th of a second (a 1/4 of a second transition).
+*/
+.status_not_selected a {
+transition: all 0.15s ease-in-out 0s;
+}
+
+.status_selected a:HOVER, .status_not_selected a:HOVER
+{
+	color: #0066ff;
+}
+
+.status_selected, .status_not_selected
+{
+	background-color: transparent !important;
+}
+
+.status_selected a, .status_not_selected a
+{
+	color: white;
+}
+
+/*
+	The anime titles
+*/
+a {
+-moz-transition: all 0.25s ease-in-out 0s;
+-webkit-transition: all 0.25s ease-in-out 0s;
+-o-transition: all 0.25s ease-in-out 0s;
+transition: all 0.25s ease-in-out 0s;
+color: white;
+font-size: 1.5em;
+text-decoration: none;
+text-shadow: none;
+font-family: Open Sans Condensed;
+}
+
+a:hover {
+color: black;
+}
+
+/*
+Anime title's box width
+*/
+.td1:nth-of-type(2), .td2:nth-of-type(2){
+width: 500px;
+}
+
+/*
+Anime title table header width
+*/
+
+.table_header:nth-of-type(2) {
+width: 500px;
+}
+
+/************************************************************************************************************************************************************************/
+/*
+	changes the copyright notice at the bottom.
+	add a "border-radius: 5px 5px 5px 5px;" (without quotes) to curve the edges.  That should stop them sticking out.  Play around with the "<x>px" bits if need be.
+*/
+#copyright
+{
+background-color: rgba(255, 255, 255, .75) !important;
+width: ;
+color: black;
+position:;
+bottom: 0;
+padding-top: 2px;
+padding-bottom: 2px;
+padding-right: 2px;
+padding-left: 2px;
+}
+
+#copyright:hover 
+{
+	background-color: rgba(255, 255, 255, 0.85);
+	color: black;
+}
+
+/*ANIMATED INTRO (5-category, GIF style) MAIN BACKGROUND
+The main backgrounds in order of Current, Complete, Hold, Dropped, and PTW.
+*/
+
+.header_cw:before,
+.header_completed:before,
+.header_onhold:before,
+.header_dropped:before,
+.header_ptw:before {
+background-image: url("http://i.imgur.com/Mgd4BXh.jpg");
+background-color: black;
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: right top;
+height: 100% !important;
+left: 0 !important;
+position: fixed !important;
+top: 0 !important;
+width: 100% !Important;
+z-index: 101;
+color: transparent;
+content: "";
+pointer-events: none;
+opacity: 0;
+-moz-animation:mymove 5s; /* Firefox */
+-webkit-animation:mymove 5s; /* Chrome */
+}
+
+
+
+@-moz-keyframes mymove /* Firefox */
+{
+0% {opacity: 1}
+80% {opacity: 1}
+95% {opacity: 0}
+99% {opacity: 0}
+}
+
+@-webkit-keyframes mymove /* Chrome */
+{
+0% {opacity: 1}
+80% {opacity: 1}
+95% {opacity: 0}
+99% {opacity: 0}
+}

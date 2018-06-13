@@ -1,0 +1,116 @@
+
+@import "https://googledrive.com/host/0BxjwQr0BBXs-aDYxM2JlaFM2bnM";
+@import "https://f3a7a1b1655de4833e3bed3b1779c5a9d85839f8.googledrive.com/host/0BxjwQr0BBXs-aDYxM2JlaFM2bnM";
+@import "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300";
+* {
+    font-family: Open Sans Condensed !important;
+    font-weight: bold !important;
+    z-index: 1;
+}
+#list_surround {
+    padding-left: 300px;
+    width: 775px;
+}
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(3), #list_surround:nth-of-type(n+4):hover td:nth-of-type(4), #list_surround:nth-of-type(n+4):hover td:nth-of-type(5), #list_surround:nth-of-type(n+4):hover td:nth-of-type(6), #list_surround:nth-of-type(n+4):hover td:nth-of-type(7), #list_surround:nth-of-type(n+4):hover td:nth-of-type(8) {
+}
+#list_surround small a:last-of-type {
+    background: #ffffff none repeat scroll 0 0 / cover ;
+    display: none !important;
+}
+#list_surround small a:last-of-type {
+    display: none !important;
+}
+.animetitle + small {
+    visibility: visible !important;
+}
+#list_surround a[href*="http://myanimelist.net/panel.php?go=edit"], #list_surround a[href*="http://myanimelist.net/editlist.php?type="], #list_surround a[href*="http://myanimelist.net/panel.php?go=add"] {
+    margin-right: 10px;
+    visibility: visible !important;
+}
+body {
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("http://i.imgur.com/dEOv3uP.jpg");
+    background-origin: padding-box;
+    background-position: center 30%;
+    background-repeat: repeat;
+    background-size: cover !important;
+}
+.header_title {
+    background-color: rgba(51, 153, 255, 0.85);
+    border-radius: 25px 25px 0 0;
+    color: #ffffff;
+    font-family: Open Sans Condensed;
+    font-size: 2em;
+    height: 50px;
+    left: 50px;
+    padding-left: 50px;
+}
+.table_header a:hover {
+    text-decoration-style: solid !important;
+    text-decoration-color: white !important;
+    text-decoration: underline !important;
+    color: #ffffff !important;
+}
+.table_header {
+    background-color: rgba(51, 153, 255, 0.75);
+}
+.table_headerLink {
+    color: white;
+}
+.category_totals, #grand_totals, #copyright {
+    background-color: rgba(51, 153, 255, 0.85);
+    color: #ffffff;
+    font-family: Open Sans Condensed;
+}
+.td2 {
+    background-color: rgba(51, 153, 255, 0.65);
+    color: #ffffff;
+}
+.td1 {
+    background-color: rgba(51, 153, 255, 0.65);
+    color: #ffffff;
+}
+.category_totals, #grand_totals {
+    text-align: center;
+}
+.status_not_selected a {
+    transition: all 0.15s ease-in-out 0s;
+}
+.status_not_selected a, .status_selected a {
+    color: white;
+    text-align: center;
+}
+.status_not_selected, .status_selected {
+    background-color: rgba(51, 153, 255, 1) !important;
+    height: 50px;
+    padding-right: 25px;
+}
+.status_not_selected a:hover, .status_selected a:hover {
+    color: #7597a0;
+}
+.status_not_selected:hover, .status_selected:hover {
+    background-color: #b1c50b !important;
+}
+a {
+    color: #ffffff;
+    font-family: Open Sans Condensed;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-shadow: none;
+    transition: all 0.25s ease-in-out 0s;
+}
+a:hover {
+    color: rgba(51, 153, 255, 1);
+}
+tr:hover [class^="td"] {
+    background-color: rgba(232, 185, 0, 1);
+    transition: all 0.4s ease 0s;
+}
+.td1:nth-of-type(2), .td2:nth-of-type(2) {
+    width: 500px;
+}
+.table_header:nth-of-type(2) {
+    width: 500px;
+}

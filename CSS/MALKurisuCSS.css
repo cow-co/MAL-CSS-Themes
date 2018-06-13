@@ -1,0 +1,746 @@
+@import url(https://googledrive.com/host/0BxjwQr0BBXs-aDYxM2JlaFM2bnM);
+@import url(https://f3a7a1b1655de4833e3bed3b1779c5a9d85839f8.googledrive.com/host/0BxjwQr0BBXs-aDYxM2JlaFM2bnM);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(https://fonts.googleapis.com/css?family=Nixie+One);
+
+*
+{
+   font-family: Open Sans Condensed;
+   font-weight: bold !important;
+}
+
+/*
+	Customises the top bar
+*/
+/*
+COLOR OF THE ICONS
+Change the color, and adjust the opacity for brighter color. 
+Remove the display: none to match the selected icon to the other icons.
+*/
+ #mal_cs_listinfo:before,  #mal_cs_links:before, 
+ #mal_cs_otherlinks:before,  #mal_cs_powered:before {
+background: transparent;
+opacity: .9;
+}
+
+/*
+BORDER OF ICONS
+If you're having trouble seeing the border bottom, lower the height by a pixel or two until you see it.
+
+*/
+ #mal_cs_listinfo:before,  #mal_cs_links:before,  #mal_cs_otherlinks:before,  #mal_cs_powered:before,  #mal_cs_listinfo:before,  #mal_cs_links:before, 
+ #mal_cs_otherlinks:before,  #mal_cs_powered:before {
+    border-color: ;
+    border-style: ;
+    border-width: ;
+    height: 32px !important;
+}
+
+
+/*
+BUTTONS COLOR AND BORDER
+Buttons within the hover menus, not the icons themselves. 
+Second code is for button color on hover. 
+*/
+ #mal_cs_listinfo a,  #mal_cs_links a,  #mal_cs_otherlinks a,  #mal_cs_powered a img{
+    background-color: rgba(64, 60, 90, 0.6) !important;
+    border-color: transparent;
+    border-style: solid !important;
+    border-width: 1px !important;
+}
+
+
+ #mal_cs_listinfo a:hover,  #mal_cs_links a:hover,  #mal_cs_otherlinks a:hover,  #mal_cs_powered a img:hover {
+background-color: #403C5A !important;
+}
+
+
+
+/*
+COLOR OF HOVER MENUS AND SELECTED ICONS
+Remove display none from the second code to match the colors of the selected icon to the icons above. 
+*/
+ #mal_cs_listinfo div,  #mal_cs_links div,  #mal_cs_otherlinks div, 
+ #mal_cs_powered div,  #mal_cs_powered dd,  #mal_cs_powered a  {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+ #mal_cs_listinfo:hover:before,  #mal_cs_links:hover:before, 
+ #mal_cs_otherlinks:hover:before,  #mal_cs_powered:hover:before,
+ #mal_cs_listinfo:hover:after,  #mal_cs_links:hover:after, 
+ #mal_cs_otherlinks:hover:after,  #mal_cs_powered:hover:after {
+  display: none;
+  background-color: ;
+  opacity: .2;
+}
+
+/*
+COLOR OF USERNAME (for visitors)
+You don't see this username on the menus when you're logged in, log out to see it. 
+*/
+ #mal_cs_otherlinks strong a {
+color: #333333 !important;
+}
+
+ #mal_cs_otherlinks strong a:hover {
+color: blue !important;
+background-color: transparent !important;
+}
+
+
+/*
+POSITION OF TOP BAR
+Change to absolute if you want it to not scroll with the page.
+*/
+#mal_control_strip
+{
+position: absolute !important;
+background-color: transparent !important;
+background-image: url(none) !important;
+}
+
+
+
+
+/*
+OTHER CODES
+If you want to change out the icon images themselves, you can scroll down through the codes and find the background images and change them with your own.
+*/
+
+ #mal_cs_listinfo,  #mal_cs_links,  #mal_cs_otherlinks,  #mal_cs_powered {
+-moz-box-sizing: border-box;
+transition: all 0.4s ease 0s;
+background: none no-repeat scroll 100% 0 transparent;
+border: 0 none;
+height: 0 !important;
+overflow: hidden;
+padding: 32px 0 0 !important;
+position: absolute;
+right: 4px;
+text-align: center;
+top: 4px;
+z-index: 10;
+width: 150px !important;
+}
+
+ #mal_cs_listinfo:hover,  #mal_cs_links:hover,  #mal_cs_otherlinks:hover,  #mal_cs_powered:hover {
+height: 200px !important;
+padding-top: 32px;
+}
+
+ #mal_cs_listinfo div,  #mal_cs_links div,  #mal_cs_otherlinks div,  #mal_cs_powered div,  #mal_cs_powered dd {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 0 3px 0 0;
+    font-size: 0 !important;
+    line-height: 0;
+    margin: 0 !important;
+    opacity: 0;
+    padding: 6px 0 0 !important;
+    transition: opacity 0.4s ease-in-out 0s;
+}
+ #mal_cs_listinfo:hover div,  #mal_cs_links:hover div,  #mal_cs_otherlinks:hover div,  #mal_cs_powered:hover div,  #mal_cs_powered:hover dd {
+opacity: 1;
+}
+ #mal_cs_listinfo div:nth-of-type(2),  #mal_cs_links div:nth-of-type(2),  #mal_cs_otherlinks div:nth-of-type(2),  #mal_cs_powered div:nth-of-type(2) {
+border-radius: 0 0 3px 3px;
+padding: 4px 0 8px;
+}
+ #mal_cs_listinfo a,  #mal_cs_links a,  #mal_cs_otherlinks a,  #mal_cs_powered a {
+background-color: rgba(64, 60, 90, 0.6);
+border-radius: 3px 3px 3px 3px;
+display: block;
+font: 13px/17px arial,sans-serif;
+margin: 4px 12px 0;
+padding: 3px 0;
+text-decoration: none;
+}
+ #mal_cs_listinfo a:nth-of-type(1),  #mal_cs_links a:nth-of-type(1),  #mal_cs_otherlinks a:nth-of-type(1),  #mal_cs_powered a:nth-of-type(1) {
+margin-top: 0;
+}
+
+ #mal_cs_listinfo strong a strong {
+font-weight: normal;
+}
+ #mal_cs_otherlinks strong {
+color: #333333;
+display: block;
+font: bold 13px/17px arial,sans-serif !important;
+padding: 0 4px 4px;
+text-shadow: 0 1px 1px #FFFFFF;
+}
+ #mal_cs_otherlinks strong a {
+background: none repeat scroll 0 0 transparent !important;
+border-color: transparent !important;
+border-radius: 0 0 0 0;
+color: #333333;
+display: inline;
+font: bold 13px/17px arial,sans-serif !important;
+margin: 0;
+padding: 0;
+text-shadow: 0 1px 1px #FFFFFF;
+}
+ #mal_cs_powered a {
+border-radius: 0 3px 0 0 !important;
+display: block !important;
+margin: 0 !important;
+opacity: 0;
+padding: 8px 0 0 !important;
+}
+ #mal_cs_powered:hover a {
+opacity: 1;
+}
+ #mal_cs_powered a img {
+transition: all 0.25s ease-in-out 0s;
+background: url("http://i.imgur.com/fGTjBC3.png") no-repeat scroll 50% 6px rgba(64, 60, 90, 0.6);
+border-radius: 3px 3px 3px 3px;
+display: block;
+height: 0;
+margin: 0 12px;
+padding: 23px 0 0 126px;
+width: 0;
+}
+ #mal_cs_powered a img:hover {
+background-color: #403C5A;
+}
+ #mal_cs_powered #search {
+border-radius: 0 0 3px 3px;
+padding: 8px;
+position: relative;
+}
+ #mal_cs_powered #search #searchBox {
+-moz-box-sizing: border-box;
+border-color: #BCBCBC #D6D6D6 #D6D6D6;
+border-radius: 2px 2px 2px 2px;
+border-style: solid;
+border-width: 1px;
+color: #333333;
+display: inline-block;
+font-family: arial,sans-serif;
+font-size: 13px;
+height: 28px;
+padding-left: 6px !important;
+padding-right: 24px !important;
+vertical-align: top;
+width: 100px;
+}
+ #mal_cs_powered #search #searchBox:hover,  #mal_cs_powered #search #searchBox:focus {
+border-color: #ACACAC #C6C6C6 #C6C6C6;
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+ #mal_cs_powered #search #searchListButton {
+background: url("http://i.imgur.com/XqsilHp.png") no-repeat scroll 0 0 transparent;
+border-radius: 3px 3px 3px 3px;
+height: 0;
+margin: 0;
+padding: 16px 0 0 16px;
+position: absolute;
+right: 12px;
+top: 14px;
+width: 0;
+}
+ #mal_cs_listinfo {
+background-image: url("http://i.imgur.com/UXZxrWI.png");
+right: 106px;
+}
+ #mal_cs_listinfo:hover {
+background-image: url("http://i.imgur.com/VcVVnod.png");
+}
+ #mal_cs_links {
+background-image: url("http://i.imgur.com/LpXWTzt.png");
+right: 72px;
+z-index: 9;
+}
+ #mal_cs_links:hover {
+background-image: url("http://i.imgur.com/oPfKrOl.png");
+}
+ #mal_cs_otherlinks {
+background-image: url("http://i.imgur.com/ogmX9qC.png");
+right: 38px;
+z-index: 8;
+}
+ #mal_cs_otherlinks:hover {
+background-image: url("http://i.imgur.com/EEGHkbF.png");
+}
+ #mal_cs_powered {
+background-image: url("http://i.imgur.com/ct4BVP5.png");
+right: 4px !important;
+z-index: 7;
+}
+ #mal_cs_powered:hover {
+background-image: url("http://i.imgur.com/TUUWtaj.png");
+}
+td#mal_cs_pic a img {
+display: none;
+}
+#mal_cs_pic, #mal_cs_listinfo, #mal_cs_links {
+border-right: 0 none !important;
+}
+
+ #mal_cs_listinfo,  #mal_cs_links,  #mal_cs_otherlinks,  #mal_cs_powered {
+padding: 32px 0 0 !important;
+}
+
+ #mal_cs_listinfo:before, 
+ #mal_cs_links:before, 
+ #mal_cs_otherlinks:before, 
+ #mal_cs_powered:before {
+  z-index: 10 !important;
+  content: "";
+  left: 0 !important;
+  top: 0 !important;
+  width: 32px !important;
+  position: absolute !important;
+  border-radius: 4px;
+}		
+
+ #mal_cs_listinfo:after{
+background-image: url(http://i.imgur.com/856wzPZ.png);
+}
+ #mal_cs_links:after{
+background-image: url(http://i.imgur.com/rwvRyux.png);
+}
+ #mal_cs_otherlinks:after{
+background-image: url(http://i.imgur.com/fbWr1K4.png);
+} 
+ #mal_cs_powered:after{
+background-image: url(http://i.imgur.com/fKvpt1F.png);
+}
+
+ #mal_cs_listinfo:after, 
+ #mal_cs_links:after, 
+ #mal_cs_otherlinks:after, 
+ #mal_cs_powered:after {
+  z-index: 100 !important;
+  content: "";
+  left: 0 !important;
+  top: 0 !important;
+  width: 32px !important;
+  height: 32px !important;
+  position: absolute !important;
+}
+
+
+
+
+ #mal_cs_listinfo,  #mal_cs_links,  #mal_cs_otherlinks,  #mal_cs_powered {
+    background-position: 0 0 !important;
+}
+ #mal_cs_listinfo {
+    left: 5px !important;
+    z-index: 1 !important;
+}
+ #mal_cs_links {
+    left: 40px !important;
+    z-index: 2 !important;
+}
+ #mal_cs_otherlinks {
+    left: 75px !important;
+    z-index: 3 !important;
+}
+ #mal_cs_powered {
+    left: 110px !important;
+    z-index: 4 !important;
+}
+
+#searchBox {
+    width: 128px !important;
+    margin-left: 1px;
+}
+
+#mal_cs_powered #search #searchListButton {
+    right: 15px !important;
+    top: 12px !important;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+#searchBox {
+    width: 96px !important;
+}
+}
+
+/*
+	Width of the list
+*/
+#list_surround
+{
+	width: 775px;
+}
+
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(3),
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(4), 
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(5), 
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(6), 
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(7),
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(8) {
+    display:-cell;
+}  
+
+#list_surround small a:last-of-type
+{
+	background: #FFFFFF;
+	background-size: cover;
+    display: none !important;
+}
+
+#list_surround small a:last-of-type {
+    display: none !important;
+}
+
+.animetitle + small {
+    visibility: visible !important;
+}
+
+
+/*
+	"a" indicates links
+*/
+#list_surround a[href*="http://myanimelist.net/panel.php?go=edit"],
+#list_surround a[href*="http://myanimelist.net/editlist.php?type="], 
+#list_surround a[href*="http://myanimelist.net/panel.php?go=add"] {
+    visibility: visible !important;
+    margin-right: 10px
+}
+
+/*
+	The main background area
+*/
+body
+{
+	background: url("http://i.imgur.com/x4keTst.jpg");
+	background-size: cover !important;
+	background-attachment: fixed;
+	background-position: center top;
+}
+
+/*
+	The headings
+*/
+.header_title
+{
+background-color: rgba(70, 126, 159, 0.85);
+font-size: 2em;
+font-family: Open Sans Condensed;
+	height: 50px;
+	color: #FFFFFF;
+	left: 50px;
+	padding-left: 50px;
+	border-radius: 25px 25px 0px 0px;
+}
+
+/*
+	The heading area for the differents
+*/
+.table_header
+{
+	background-color: rgba(176, 155, 83, 0.75);
+}
+
+/* 
+	For stuff like the numbers and the "airing"
+*/
+.category_totals, #grand_totals, #copyright
+{
+	background-color: rgba(70, 126, 159, 0.85);
+font-family: Open Sans Condensed;
+	color: #FFFFFF;
+}
+
+.td2
+{
+	color: #FFFFFF;
+	background-color: rgba(176, 155, 83, 0.5);
+}
+
+.td1
+{
+	color: #FFFFFF;
+	background-color: rgba(152, 86, 46, 0.5);
+}
+
+.category_totals, #grand_totals
+{
+	
+	text-align: center;
+}
+
+/*
+	The buttons for, e.g., All Anime, Currently Watching, etc.
+*/
+/*
+CATEGORY MENU BUTTONS TRANSITION SPEED
+By default, set to .25th of a second (a 1/4 of a second transition).
+*/
+.status_not_selected a {
+transition: all 0.15s ease-in-out 0s;
+}
+
+
+/*
+CATEGORY MENU BUTTONS (BACKGROUNDS/POSITION)
+You can also change the position of the buttons on the page with the right/top buttons. Change right to left to start them from the left side instead.
+
+Active button images are the ones seen on their own category page or when hovering over them (pointing to it with your mouse), and inactive are the others. So on the completed page you'll see the active button's image on the completed button. On other pages, you'll see the inactive image, until you point to it.
+*/
+
+/*
+CURRENT BUTTON (ACTIVE, INACTIVE)
+*/
+.status_not_selected a[href*="status=1"] {
+background-image: url(http://i.imgur.com/7O0Qwwb.png);
+top: 60px;
+right: -225px;
+border-radius: 11px 0px 0px 0px;
+}
+
+
+/*
+CURRENT BUTTON (HOVER)
+*/
+.status_selected a[href*="status=1"], .status_not_selected a[href*="status=1"]:hover{
+background-image: url(http://i.imgur.com/7O0Qwwb.png);
+right: -20px;
+top: 60px;
+border-radius: 11px 0px 0px 0px;
+}
+
+
+/*
+COMPLETED (ACTIVE, INACTIVE)
+*/
+.status_not_selected a[href*="status=2"] {
+background-image: url(http://i.imgur.com/Vfo0Tsl.png);
+top: 142px;
+right: -225px;
+}
+
+/*
+COMPLETED (HOVER)
+*/
+.status_selected a[href*="status=2"], .status_not_selected a[href*="status=2"]:hover {
+background-image: url(http://i.imgur.com/Vfo0Tsl.png);
+right: -20px;
+top: 142px;
+}
+
+/*
+ON-HOLD (ACTIVE, INACTIVE)
+*/
+.status_not_selected a[href*="status=3"] {
+background-image: url(http://i.imgur.com/kb07QwH.png);
+top: 220px;
+right: -225px;
+}
+
+/*
+ON-HOLD (HOVER)
+*/
+.status_selected a[href*="status=3"], .status_not_selected a[href*="status=3"]:hover {
+background-image: url(http://i.imgur.com/kb07QwH.png);
+right: -20px;
+top: 220px;
+}
+
+/*
+DROPPED (ACTIVE, INACTIVE)
+*/
+.status_not_selected a[href*="status=4"] {
+background-image: url(http://i.imgur.com/AvTgo8f.png);
+top: 300px;
+right: -225px;
+}
+
+/*
+DROPPED (HOVER)
+*/
+.status_selected a[href*="status=4"], .status_not_selected a[href*="status=4"]:hover {
+background-image: url(http://i.imgur.com/AvTgo8f.png);
+right: -20px;
+top: 300px;
+}
+
+/*
+PLANNED (ACTIVE, INACTIVE)
+*/
+.status_not_selected a[href*="status=6"] {
+background-image: url(http://i.imgur.com/XnWR2Iw.png);
+top: 380px;
+right: -225px;
+}
+
+/*
+PLANNED (HOVER)
+*/
+.status_selected a[href*="status=6"], .status_not_selected a[href*="status=6"]:hover {
+background-image: url(http://i.imgur.com/XnWR2Iw.png);
+right: -20px;
+top: 380px;
+}
+
+/*
+ALL ANIME (ACTIVE, INACTIVE)
+*/
+.status_not_selected a[href*="status=7"] {
+background-image: url(http://i.imgur.com/boxl5uq.png);
+top: 460px;
+right: -225px;
+border-radius: 0px 0px 0px 11px;
+}
+
+/*
+ALL ANIME (HOVER)
+*/
+.status_selected a[href*="status=7"], .status_not_selected a[href*="status=7"]:hover {
+background-image: url(http://i.imgur.com/boxl5uq.png);
+right: -20px;
+top: 460px;
+border-radius: 0px 0px 0px 11px;
+}
+
+/*
+BUTTON TEXT
+This section is disabled by default. The fonts you see on buttons by default are in the default custom images, which you change above. If you want the original text back in the buttons, change "transparent !important" below to the color you want. You can also change the font size here or add a custom font family.
+*/
+.status_selected a, .status_not_selected a {
+color: transparent !important;
+text-decoration: none !important;
+text-align: left;
+font-size: 20px;
+font-family: ;
+}
+
+/*
+OTHER CATEGORY BUTTON CODES (HEIGHT/WIDTH/COLOR)
+Control the height and width of all the buttons at once here. Change "fixed" to "absolute" to keep the buttons from scrolling down with the page. Border radius controls the button's roundness.
+*/
+.status_selected a[href*="status=1"],
+.status_selected a[href*="status=2"],
+.status_selected a[href*="status=3"],
+.status_selected a[href*="status=4"],
+.status_selected a[href*="status=6"],
+.status_selected a[href*="status=7"],
+.status_not_selected a[href*="status=1"],
+.status_not_selected a[href*="status=2"],
+.status_not_selected a[href*="status=3"],
+.status_not_selected a[href*="status=4"],
+.status_not_selected a[href*="status=6"],
+.status_not_selected a[href*="status=7"] {
+background-color: transparent;
+background-position: left top;
+background-repeat: repeat repeat;
+display: block;
+height: 80px;
+width: 290px;
+padding-left: 6px !important;
+overflow: auto;
+padding: 0;
+border: black 1px solid;
+position: fixed;
+}
+
+/*
+	The anime titles
+*/
+a {
+-moz-transition: all 0.25s ease-in-out 0s;
+-webkit-transition: all 0.25s ease-in-out 0s;
+-o-transition: all 0.25s ease-in-out 0s;
+transition: all 0.25s ease-in-out 0s;
+color: #FFFFFF;
+font-size: 1.5em;
+text-decoration: none;
+text-shadow: none;
+font-family: Open Sans Condensed;
+}
+
+a:hover
+{
+	color: rgba(172, 22, 22, 1);
+}
+
+/*
+    Colours the entire row when hovering over it.
+*/
+tr:hover [class^=td] {
+background-color: rgba(70, 126, 159, 0.90) !important;
+-moz-transition: .4s ease;
+-webkit-transition: .4s ease;
+-o-transition: .4s ease;
+}
+
+/*
+Anime title's box width
+*/
+.td1:nth-of-type(2), .td2:nth-of-type(2){
+width: 500px;
+}
+
+/*
+Anime title table header width
+*/
+
+.table_header:nth-of-type(2) {
+width: 500px;
+}
+
+/*
+	Removes top bar
+*/
+#mal_control_strip {
+    display: none !important;
+}
+
+
+
+/*  ANIMATED INTRO (GIF-style, same for all category pages)
+The first set of codes is for the background seen behind the animations.
+The second set is for the left side of the animated intro. It has a custom image, a logo (Yui Nakamura by default) made at cooltext.com. Content code changes the message below that font. The third set controls the image on the right (animated Angel Beats GIF by default). 
+
+Background position and background size changes the area covered, position, and size of the images used in the second and third set.
+*/
+
+.header_cw:before,
+.header_completed:before,
+.header_onhold:before,
+.header_dropped:before,
+.header_ptw:before {
+background-image: url("http://i.imgur.com/GclNpLg.jpg");
+background-color: black;
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: right bottom;
+height: 100% !important;
+left: 0 !important;
+position: fixed !important;
+top: 0 !important;
+width: 100% !Important;
+z-index: 101;
+color: transparent;
+content: "Welcome";
+font-family: "Nixie One" !important;
+pointer-events: none;
+opacity: 0;
+-moz-animation:mymove 5s; /* Firefox */
+-webkit-animation:mymove 5s; /* Safari and Chrome */
+}
+
+@-moz-keyframes mymove /* Firefox */
+{
+0% {opacity: 1}
+80% {opacity: 1}
+95% {opacity: 0}
+99% {opacity: 0}
+}
+
+@-webkit-keyframes mymove /* Safari and Chrome */
+{
+0% {opacity: 1}
+80% {opacity: 1}
+95% {opacity: 0}
+99% {opacity: 0}
+}
+
+#copyright {
+z-index: 10000 !important;
+position: relative;
+}

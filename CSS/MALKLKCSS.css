@@ -1,0 +1,181 @@
+@import url(https://googledrive.com/host/0BxjwQr0BBXs-aDYxM2JlaFM2bnM);
+@import url(https://f3a7a1b1655de4833e3bed3b1779c5a9d85839f8.googledrive.com/host/0BxjwQr0BBXs-aDYxM2JlaFM2bnM);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+*
+{
+   font-family: Open Sans Condensed !important;
+}
+
+/*
+	Width of the list
+*/
+#list_surround
+{
+	width: 1050px; 
+	padding-left: 100px;
+}
+
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(3),
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(4), 
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(5), 
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(6), 
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(7),
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(8) {
+    display:-cell;
+}  
+
+#list_surround small a:last-of-type
+{
+	background: #FFFFFF;
+	background-size: cover;
+    display: none !important;
+}
+
+#list_surround small a:last-of-type {
+    display: none !important;
+}
+
+.animetitle + small {
+    visibility: visible !important;
+}
+
+
+/*
+	"a" indicates links
+*/
+#list_surround a[href*="http://myanimelist.net/panel.php?go=edit"],
+#list_surround a[href*="http://myanimelist.net/editlist.php?type="], 
+#list_surround a[href*="http://myanimelist.net/panel.php?go=add"] {
+    visibility: visible !important;
+    margin-right: 10px
+}
+
+/*
+	The main background area
+*/
+body
+{
+	background: url(http://i.imgur.com/dCWHK9T.png);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center top;
+}
+
+/*
+	The headings
+*/
+.header_title
+{
+background-color: rgba(251, 122, 139, 0.85);
+font-size: 2em;
+font-family: Open Sans Condensed;
+	height: 50px;
+	color: #000000;
+	left: 50px;
+	padding-left: 50px;
+	border-radius: 25px 25px 0px 0px;
+}
+
+/*
+	The heading area for the differents
+*/
+.table_header
+{
+	background-color: rgba(0, 0, 0, 0.75);
+	color: black !important;
+}
+
+.table_header a:hover
+{
+	color: #fa7a8b;
+}
+
+/* 
+	For stuff like the numbers and the "airing"
+*/
+.category_totals, .td1, .td2, #grand_totals, #copyright
+{
+background-color: rgba(0, 0, 0, 0.5);
+font-family: Open Sans Condensed;
+	color: #FFFFFF;
+}
+
+.category_totals, #grand_totals
+{
+	background-color: rgba(0, 0, 0, 0.75) !important;
+	text-align: center;
+}
+
+/*
+	The buttons for, e.g., All Anime, Currently Watching, etc.
+*/
+.status_not_selected a {
+transition: all 0.15s ease-in-out 0s;
+}
+
+.status_selected a:HOVER, .status_not_selected a:HOVER
+{
+	color: #fa7a8b;
+}
+
+.status_selected, .status_not_selected
+{
+	background-color: transparent !important;
+}
+
+.status_selected:HOVER, .status_not_selected:HOVER
+{
+	background-color: black !important;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.status_selected a, .status_not_selected a
+{
+	color: white;
+}
+
+/*
+	The anime titles
+*/
+a {
+-moz-transition: all 0.25s ease-in-out 0s;
+-webkit-transition: all 0.25s ease-in-out 0s;
+-o-transition: all 0.25s ease-in-out 0s;
+transition: all 0.25s ease-in-out 0s;
+color: #FFFFFF;
+font-size: 1.5em;
+text-decoration: none;
+text-shadow: none;
+font-family: Open Sans Condensed;
+}
+
+a:hover
+{
+	color: #fa7a8b;
+}
+
+/*
+    Colours the entire row when hovering over it.
+*/
+tr:hover [class^=td] {
+background-color: black !important;
+-moz-transition: .4s ease;
+-webkit-transition: .4s ease;
+-o-transition: .4s ease;
+}
+
+/*
+Anime title's box width
+*/
+.td1:nth-of-type(2), .td2:nth-of-type(2){
+width: 500px;
+}
+
+/*
+Anime title table header width
+*/
+
+.table_header:nth-of-type(2) {
+width: 500px;
+}

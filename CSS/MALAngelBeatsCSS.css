@@ -1,0 +1,239 @@
+@import url(https://googledrive.com/host/0BxjwQr0BBXs-aDYxM2JlaFM2bnM);
+@import url(https://f3a7a1b1655de4833e3bed3b1779c5a9d85839f8.googledrive.com/host/0BxjwQr0BBXs-aDYxM2JlaFM2bnM);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+/****/
+*
+{
+   font-family: Open Sans Condensed !important;
+}
+
+/*
+	Width of the list
+*/
+#list_surround
+{
+	width: 1050px; 
+	padding-left: 100px;
+}
+
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(3),
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(4), 
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(5), 
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(6), 
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(7),
+#list_surround:nth-of-type(n+4):hover td:nth-of-type(8) {
+    display:-cell;
+}  
+
+#list_surround small a:last-of-type
+{
+	background: #FFFFFF;
+	background-size: cover;
+    display: none !important;
+}
+
+#list_surround small a:last-of-type {
+    display: none !important;
+}
+
+.animetitle + small {
+    visibility: visible !important;
+}
+
+/*
+	The # symbol over the numbers in the tables
+*/
+.table_headerLink
+{
+	color: white;
+}
+
+.table_headerLink:HOVER
+{
+	color: #328396;
+}
+
+/*
+	"a" indicates links
+*/
+#list_surround a[href*="http://myanimelist.net/panel.php?go=edit"],
+#list_surround a[href*="http://myanimelist.net/editlist.php?type="], 
+#list_surround a[href*="http://myanimelist.net/panel.php?go=add"] {
+    visibility: visible !important;
+    margin-right: 10px
+}
+
+/*
+	The main background area
+*/
+body
+{
+	background: url(http://i.imgur.com/i64uGFy.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center top;
+}
+
+/*
+	The headings
+*/
+.header_title
+{
+background-color: rgba(242, 242, 242, 0.85);
+font-size: 2em;
+font-family: Open Sans Condensed;
+	height: 50px;
+	color: #247080;
+	left: 50px;
+	padding-left: 50px;
+	border-radius: 25px 25px 0px 0px;
+}
+
+/*
+	The heading area for the differents
+*/
+.table_header
+{
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+.table_header a:HOVER
+{
+	color: #328396;
+}
+
+/* 
+	For stuff like the numbers and the "airing"
+*/
+.category_totals, .td1, .td2, #grand_totals, #copyright
+{
+background-color: rgba(0, 0, 0, 0.5);
+font-family: Open Sans Condensed;
+	color: #FFFFFF;
+}
+
+.category_totals, #grand_totals
+{
+	
+	text-align: center;
+}
+
+/*
+	The buttons for, e.g., All Anime, Currently Watching, etc.
+*/
+/*
+CATEGORY MENU BUTTONS TRANSITION SPEED
+By default, set to .25th of a second (a 1/4 of a second transition).
+*/
+.status_not_selected a {
+transition: all 0.15s ease-in-out 0s;
+}
+
+.status_not_selected, .status_selected
+{
+	color: white;
+}
+
+.status_not_selected a:HOVER, .status_selected a:HOVER
+{
+	color: black;
+}
+
+.status_not_selected:HOVER, .status_selected:HOVER
+{
+	border-radius: 15px 15px 15px 15px;
+	background-color: rgba(242, 242, 242, 0.85)  !important;
+	color: black;
+}
+
+/*
+	The anime titles
+*/
+a {
+-moz-transition: all 0.25s ease-in-out 0s;
+-webkit-transition: all 0.25s ease-in-out 0s;
+-o-transition: all 0.25s ease-in-out 0s;
+transition: all 0.25s ease-in-out 0s;
+color: #FFFFFF;
+font-size: 1.5em;
+text-decoration: none;
+text-shadow: none;
+font-family: Open Sans Condensed;
+}
+
+a:hover
+{
+	color: #000000;
+}
+
+/*
+    Colours the entire row when hovering over it.
+*/
+tr:hover [class^=td] {
+background-color: #328396 !important;
+-moz-transition: .4s ease;
+-webkit-transition: .4s ease;
+-o-transition: .4s ease;
+}
+
+/*
+Anime title's box width
+*/
+.td1:nth-of-type(2), .td2:nth-of-type(2){
+width: 500px;
+}
+
+/*
+Anime title table header width
+*/
+
+.table_header:nth-of-type(2) {
+width: 500px;
+}
+
+/*ANIMATED INTRO (5-category, GIF style) MAIN BACKGROUND
+The main backgrounds in order of Current, Complete, Hold, Dropped, and PTW.
+*/
+
+.header_cw:before,
+.header_completed:before,
+.header_onhold:before,
+.header_dropped:before,
+.header_ptw:before {
+background-image: url("http://i.imgur.com/9cF611v.jpg");
+background-color: black;
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: right top;
+height: 100% !important;
+left: 0 !important;
+position: fixed !important;
+top: 0 !important;
+width: 100% !Important;
+z-index: 101;
+color: transparent;
+content: "";
+pointer-events: none;
+opacity: 0;
+-moz-animation:mymove 5s; /* Firefox */
+-webkit-animation:mymove 5s; /* Chrome */
+}
+
+
+
+@-moz-keyframes mymove /* Firefox */
+{
+0% {opacity: 1}
+80% {opacity: 1}
+95% {opacity: 0}
+99% {opacity: 0}
+}
+
+@-webkit-keyframes mymove /* Chrome */
+{
+0% {opacity: 1}
+80% {opacity: 1}
+95% {opacity: 0}
+99% {opacity: 0}
+}
